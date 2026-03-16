@@ -2,8 +2,29 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:raprincis="com.raprincis.demo.controls"
-    >
+>
     <Page title="{i18n>title}">
-        <Input value="{CustomerID}" showValueHelp="true" valueHelpRequest="onValueHelpRequested"/>
+        <content>
+            <VBox class="form" gap="1rem">
+                <VBox>
+                    <Label text="Customer Id" design="Bold"/>
+                    <Input value="{order>CustomerId}" placeholder="Customer Id" showValueHelp="true"
+                        valueHelpRequest="onCustomerHelpRequested" />
+
+                </VBox>
+                <VBox>
+                    <Label text="Employee Id" design="Bold"/>
+                    <Input value="{order>EmployeeId}" placeholder="Employee Id" showValueHelp="true"
+                        valueHelpRequest="onEmployeeHelpRequested" />
+                </VBox>
+
+            </VBox>
+        </content>
+        <dependents>
+            <raprincis:ValueHelp id="idVhCustomerId" ok="onCustomerIdSelected"
+                configuration="{configurations>CustomerId}" />
+            <raprincis:ValueHelp id="idVhEmployeeId" ok="onCustomerIdSelected"
+                configuration="{configurations>Employee}" />
+        </dependents>
     </Page>
 </mvc:View>

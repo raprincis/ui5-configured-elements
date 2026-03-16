@@ -1,0 +1,51 @@
+{
+    "CustomerId": {
+        "key": "CustomerID",
+        "supportMultiselect": false,
+        "binding": {
+            "path": "/Customers"
+        },
+        "columns": [
+            {
+                "name": "CustomerID",
+                "label": "Customer ID",
+                "template": "{CustomerID}"
+            },
+            {
+                "name": "ContactName",
+                "label": "Contact Name",
+                "template": "{ContactName}"
+            },
+            {
+                "name": "ContactTitle",
+                "label": "Contact Title",
+                "template": "{ContactTitle}"
+            }
+        ]
+    },
+    "Employee": {
+        "key": "EmployeeID",
+        "supportMultiselect": false,
+        "binding": {
+            "path": "/Employees"
+        },
+        "columns": [
+            {
+                "name": "EmployeeID",
+                "label": "Id",
+                "template": "{EmployeeID}",
+                "width": "3rem"
+            },
+            {
+                "name": "FullName",
+                "label": "Contact Name",
+                "template": "{TitleOfCourtesy} {FirstName} {LastName}"
+            },
+            {
+                "name": "Title",
+                "label": "Title",
+                "template": "{Title}"
+            }
+        ]
+    }
+}

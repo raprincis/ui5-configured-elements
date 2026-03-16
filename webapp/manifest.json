@@ -68,6 +68,10 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "configurations": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "configurations/value-help.json"
       }
     },
     "resources": {
