@@ -1,6 +1,9 @@
 <mvc:View controllerName="com.raprincis.demo.controller.Home"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+    xmlns:raprincis="com.raprincis.demo.controls"
+    >
+    <Page title="{i18n>title}">
+        <Input value="{CustomerID}" showValueHelp="true" valueHelpRequest="onValueHelpRequested"/>
     </Page>
 </mvc:View>
